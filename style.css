@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+}
+#Titulo{
+    grid-area: header;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.Barra {
+    display: grid;
+    grid-template-areas: 
+    "nav header consultas"
+    "nav muebles consultas"
+    "nav parrillas consultas"
+    "nav rustico consultas"
+    "nav footer consultas"    
+    ;
+    grid-template-columns: 15% auto 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    grid-template-rows: 150px 150px 150px 150px;
+    justify-items: stretch;
+    align-items: center;
+   
+    
+    }
+
+.nav1{
+    grid-area: nav;
+    background-color: white;
+    color: black;
+}
+
+.muebles{
+    grid-area: muebles;
+    background-color: aqua;
+}
+
+.parrillas{
+    grid-area: parrillas;
+    background-color: burlywood;
+}
+.rustico{
+
+    grid-area: parrillas;
+    background-color: yellow;
+}
+.consultas{
+    grid-area: consultas;
+    background-color: blue;
+}
+.footer{
+    grid-area: footer;
+    color:  white;
+    background-color: blueviolet;
+}
