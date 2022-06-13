@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+    
+
+.Barra {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "main main main"
+    "footer footer footer"    
+    ;
+    grid-template-columns: 15% auto 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    grid-template-rows: 150px 150px 1fr 150px;
+    
+   
+    
+    }
+
+.header{
+        grid-area: header;
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
+.nav1{
+    grid-area: nav;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.main{
+    grid-area: main;
+
+
+}
+
+
+
+.footer{
+    grid-area: footer;
+    color:  white;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+}
+.cuerpo {
+    display: grid;  
+
+    grid-template-columns: 400px 300px; 
+
+    grid-template-rows: 100px 200px; 
+
+    padding: 100px;
+ }
+ 
+#imagenp{
+    height: 55%;
+    width: 55%;
+ }
+
+ .cuerpo2{
+
+    display: grid;  
+
+    grid-template-columns: 500px 400px; 
+
+    grid-template-rows: 100px 200px; 
+
+    padding: 100px;
+
+    background-color: black;
+    color: white;
+
+ }
